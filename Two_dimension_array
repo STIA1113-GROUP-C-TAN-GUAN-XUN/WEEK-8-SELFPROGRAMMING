@@ -1,0 +1,47 @@
+package selfProgramming;
+
+public class Two_dimension_array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+		
+		int x = myNumbers[1][2];
+		System.out.println(x);
+		
+		String[][] columnNames = {{"Material","       Price(RM)"},
+				{"Leather","         RM90"},
+				{"Vegan Leather","   RM25"},
+				{"Cotton Canvas","   RM55"},
+				{"Nylon","           RM30"},
+				{"Cordura","         RM35"},
+				{"Denim","           RM70"}};
+
+		for(int i = 0 ; i < columnNames.length; i++){
+			for(int j = 0 ; j < 2; j++){
+				System.out.printf(columnNames[i][j] + " ");
+				}
+				System.out.println();
+			}
+		System.out.println();
+		
+		String[][] compartment = {{"Items","       		Price (RM)"},
+									{"Pen","			RM3"},
+									{"Book","           	RM7"},
+									{"Glue","            	RM5"},
+									{"Bottle","        		RM12"},
+									};
+		
+		for(int z = 0 ; z < compartment.length; z++){
+			for(int y = 0 ; y < 2; y++){
+				System.out.printf(compartment[z][y] + " ");
+			}
+			System.out.println();
+		}
+
+		
+		
+	}
+
+}
