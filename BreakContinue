@@ -1,0 +1,45 @@
+package selfProgramming;
+
+public class BreakContinue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		for (int i = 0; i < 10; i++) {
+			  if (i == 4) {
+			    break;  //stops the loop when i is equal to 4
+			  }
+			  System.out.println(i);
+			}
+		System.out.println();
+		
+		for (int i = 0; i < 10; i++) {
+			  if (i == 4) {
+			    continue;  //continues with the next iteration in the loop, skip 4
+			  }
+			  System.out.println(i);
+			}
+		System.out.println();
+		
+		
+		//Break and Continue in While Loop
+		int j = 0;
+		while (j < 10) {
+		  System.out.println(j);
+		  j++;
+		  if (j == 4) {
+		    break;
+		  }
+		}
+		System.out.println();
+		
+		int y = 0;
+		while (y < 10) {
+		  if (y == 4) {
+		    y++;
+		    continue;
+		  }
+		  System.out.println(y);
+		  y++;
+		}
+	}
